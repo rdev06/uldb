@@ -1,0 +1,23 @@
+{
+  "name": "uldb",
+  "version": "1.0.0",
+  "description": "This a ulto lite db for nodejs with zero dependency",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "homepage": "https://mafset.com",
+  "keywords": [
+    "litedb",
+    "uldb",
+    "ultraLiteDatabase",
+    "TinyDatabase",
+    "easyDatabase"
+  ],
+  "author": "Roshan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdev06/uldb.git"
+  },
+  "license": "ISC"
+}
