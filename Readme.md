@@ -15,6 +15,7 @@ Make a file data.json somewhere and fill {} in it (Preformatted text):
 - **_find()_** is used to get all the data
 - **_get()_** is used to get data of required key
 - **_set()_** is used to insert/update key data but it will not return output
+- **_setMany()_** is used to insert/update object data but it will not return output
 - **_setGet()_** much similar to **_set()_** but it will return output
 - **_setGetAll()_** similar to **_setGet()_** but it will return all data of object
 - **_unset()_** is used to delete key from data
@@ -24,6 +25,9 @@ Make a file data.json somewhere and fill {} in it (Preformatted text):
 ```javascript
 const uldb = require('uldb')('./data.json');
 uldb.set('name', 'roshan', () => console.log('no output')); // did not give output
+uldb.setMany({ gender: 'male', country: 'INDIA' }, () =>
+  console.log('no output')
+); // did not give output
 uldb.setGet('gender', 'male', data => console.log(data)); //'male'
 uldb.setGetAll('age', 23, data => console.log(data)); //{name:'roshan',gender:'male',age:23}
 uldb.find(data => console.log(data)); //{name:'roshan',gender:'male',age:23}
